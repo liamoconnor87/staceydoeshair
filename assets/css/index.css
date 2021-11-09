@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(168, 140, 213);
+  color: rgb(53, 53, 53);
+}
+
+.landing-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-col{
+  width: 100%;
+  margin: auto auto;
+  max-width: 500px;
+}
+
+.landing-col img{
+  width: inherit;
+  height: auto;
+  margin: 0 auto;
+}
+
+.landing-col p{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+p span{
+  padding: 10px;
+}
+
+a{
+  color: inherit;
+}
+
+a:hover{
+  color: rgb(0, 255, 0);
+}
+
+/* CREATED BY WEBDEVLIAM */
+.created-by{
+  display: flex;
+  color: inherit;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-left: 10px; /* temp */
+}
+
+.created-by p{
+  margin: auto auto auto 0;
+  font-size: 10px;
+}
+.created-by a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.liam-link:hover{
+  text-decoration: underline;
+}
+
+/* IMAGE URL'S  */
+.stacey-bg{
+  background-image: url("https://www.dropbox.com/s/4mra4xj11mb28lb/staceydoeshair-bg.png?raw=1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* SMART DEVICES */
+@media screen and (min-width :370px){
+
+  .landing-col p{
+    font-size: 40px;
+  }
+
+}
+
+@media screen and (min-width: 500px){
+
+  .landing-col p{
+    font-size: 50px;
+  }
+
+}

@@ -1,1 +1,1 @@
-"#Website for Stacey Does Hair" 
+"Website for Stacey Does Hair" 

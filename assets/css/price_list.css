@@ -1,0 +1,51 @@
+.price-list-sect{
+	padding: 50px 0;
+	background-color: rgb(255, 255, 255);
+	color: rgb(49, 49, 49);
+	text-align: center;
+	min-height: 100vh;
+}
+
+.pls-note{
+	width: 100%;
+	background-color: rgb(49, 49, 49);
+	color: rgb(137, 250, 156);
+}
+
+.pls-note p{
+	padding: 40px 0;
+}
+
+.price-list-sect h2, .price-list-sect h3{
+	text-decoration: underline;
+ 	color: rgb(137, 250, 156);
+}
+
+.price-list-sect p{
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+@media screen and (min-width: 500px){
+
+	.price-list-sect{
+		padding-top: 80px;
+	}
+
+	.price-list-sect p{
+		font-size: 18px;
+	}
+
+}
+
+@media screen and (min-width: 800px){
+
+	.price-list-sect{
+		padding-top: 100px;
+	}
+
+	.price-list-sect p{
+		font-size: 20px;
+	}
+	
+}

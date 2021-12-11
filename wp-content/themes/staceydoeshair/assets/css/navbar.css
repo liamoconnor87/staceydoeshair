@@ -1,0 +1,154 @@
+.navbar {
+  position: fixed;
+  height: 50px;
+  /* changes depending on screen size */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 98;
+  background-color: rgb(255, 255, 255);
+  border-bottom: solid 1px rgb(168, 140, 213);
+}
+
+/* LOGO */
+.logo {
+  width: 50%;
+  max-width: 185px;
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  margin: auto auto;
+}
+
+/* MENU BUTTON */
+.menu-buttons {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  width: 40px;
+  top: 5px;
+  /* changes depending on screen size */
+  left: 5px;
+  /* changes depending on screen size */
+  color: rgb(49, 49, 49);
+}
+
+.menu-buttons i {
+  margin: auto auto;
+  font-size: 20px;
+}
+
+#close-btn {
+  opacity: 0;
+}
+
+/* SUB MENU */
+.sub-menu {
+  position: fixed;
+  background-color: rgba(255, 255, 255, .75);
+  margin-top: 50px;
+  /* must be the same as navbar height */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  z-index: 99;
+}
+
+.nav-menu {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav-menu h3 {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(49, 49, 49);
+}
+
+.title-link {
+  color: rgb(49, 49, 49);
+}
+
+.link-hover:hover {
+  text-decoration: underline;
+  color: rgb(137, 250, 156);
+}
+
+/* SMART DEVICES */
+@media screen and (min-width: 375px) {
+  .navbar {
+    height: 60px;
+  }
+
+  .sub-menu {
+    margin-top: 60px;
+  }
+
+  .menu-buttons {
+    top: 10px;
+    left: 10px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .navbar {
+    height: 80px;
+  }
+
+  .sub-menu {
+    margin-top: 80px;
+  }
+
+  .menu-buttons {
+    height: 50px;
+    width: 50px;
+    top: 15px;
+    left: 15px;
+  }
+
+  .menu-buttons i {
+    font-size: 29px;
+  }
+
+  .logo {
+    max-width: 300px;
+  }
+
+  .nav-menu h3 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .navbar {
+    height: 100px;
+  }
+
+  .sub-menu {
+    margin-top: 100px;
+  }
+
+  .menu-buttons {
+    height: 60px;
+    width: 60px;
+    top: 18px;
+    left: 20px;
+  }
+
+  .menu-buttons i {
+    font-size: 32px;
+  }
+
+  .nav-menu h3 {
+    font-size: 55px;
+  }
+}
